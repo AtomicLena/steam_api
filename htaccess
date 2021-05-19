@@ -1,0 +1,15 @@
+#empieza el rewrite
+
+RewriteEngine on
+
+#no aplicar la regla a carpetas
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#busca si el archivo con extensión php existe
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+
+#muestra la página
+
+RewriteRule ^(.*)$ $1.php [NC, L]
