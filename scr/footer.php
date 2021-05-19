@@ -87,6 +87,7 @@
       $.ajax({
         type: "GET",
         url: 'https://itp-sd.site/hll/Steam%20API/api%20files/showgames.php',
+        dataType: "json",
         data: {},
         success: function(response) {
           let card = "";
