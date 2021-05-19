@@ -1,0 +1,54 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 45px;
+}
+
+.facetorecog {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divthings {
+    padding: 20px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.logo {
+    width: 7vh;
+    height: 7vh;
+}
+
+.img-game {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: calc(40vh - ((1.275rem + .3vw) * 5));
+}
+
+.img-modal {
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+    width: 200vh;
+}
+
+.description {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.addbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
