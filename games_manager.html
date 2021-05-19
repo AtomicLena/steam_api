@@ -403,7 +403,7 @@
             $.ajax({
                 async: false,
                 type: "GET",
-                url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gamedetail.php?id=' + id,
+                url: 'api%20files/gamedetail.php?id=' + id,
                 success: function(response) {
                     gamedetail = response
                 }
@@ -412,7 +412,7 @@
             $.ajax({
                 async: false,
                 type: "GET",
-                url: 'https://itp-sd.site/hll/Steam%20API/api%20files/ownedby.php?id=' + id,
+                url: 'api%20files/ownedby.php?id=' + id,
                 success: function(response) {
                     gameowners = response
                 }
