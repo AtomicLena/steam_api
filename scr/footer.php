@@ -86,7 +86,7 @@
     function welcome() {
       $.ajax({
         type: "GET",
-        url: 'api%20files/showgames.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/showgames.php',
         data: {},
         success: function(response) {
           let card = "";
@@ -112,7 +112,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/gameupdate.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gameupdate.php',
         data: $(this).serialize(),
         success: function(response) {
           //console.log(response);
@@ -125,7 +125,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/gameinsert.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gameinsert.php',
         data: $(this).serialize(),
         success: function(response) {
           gamestable();
@@ -137,7 +137,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/gamedelete.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gamedelete.php',
         data: $(this).serialize(),
         success: function(response) {
           gamestable();
@@ -153,7 +153,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/userupdate.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/userupdate.php',
         data: $(this).serialize(),
         success: function(response) {
           //console.log(response);
@@ -166,7 +166,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/userinsert.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/userinsert.php',
         data: $(this).serialize(),
         success: function(response) {
           userstable();
@@ -178,7 +178,7 @@
       e.preventDefault();
       $.ajax({
         type: "POST",
-        url: 'api%20files/userdelete.php',
+        url: 'https://itp-sd.site/hll/Steam%20API/api%20files/userdelete.php',
         data: $(this).serialize(),
         success: function(response) {
           userstable();
@@ -195,7 +195,7 @@
     $("#exampleModal").modal("show");
     $.ajax({
       type: "GET",
-      url: 'api%20files/gamedetail.php?id=' + id,
+      url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gamedetail.php?id=' + id,
 
       success: function(response) {
         $("#gametitlem").text(response.result[0].GAME_NAME);
@@ -216,7 +216,7 @@
   function gamestable() {
     $.ajax({
       type: "GET",
-      url: 'api%20files/showgames.php',
+      url: 'https://itp-sd.site/hll/Steam%20API/api%20files/showgames.php',
       data: {},
       success: function(response) {
         console.log(response.result)
@@ -238,7 +238,7 @@
   function gamestablefilledit(gameid) {
     $.ajax({
       type: "GET",
-      url: 'api%20files/gamedetail.php?id=' + gameid,
+      url: 'https://itp-sd.site/hll/Steam%20API/api%20files/gamedetail.php?id=' + gameid,
       data: {},
       success: function(response) {
         console.log(response.result)
@@ -262,7 +262,7 @@
   function userstable() {
     $.ajax({
       type: "GET",
-      url: 'api%20files/showusers.php',
+      url: 'https://itp-sd.site/hll/Steam%20API/api%20files/showusers.php',
       data: {},
       success: function(response) {
         console.log(response.result)
@@ -283,7 +283,7 @@
   function gamestablefilledit(usrid) {
     $.ajax({
       type: "GET",
-      url: 'api%20files/userdetail.php?id=' + usrid,
+      url: 'https://itp-sd.site/hll/Steam%20API/api%20files/userdetail.php?id=' + usrid,
       data: {},
       success: function(response) {
         console.log(response.result)
